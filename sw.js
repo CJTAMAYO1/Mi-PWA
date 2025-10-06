@@ -2,13 +2,16 @@
 
 //1. nombre del cache y archivos a cachear
 
-const CACHE_NAME = "Nombre-del-cache"
-
+const CACHE_NAME = "mi-pwa-cache-v1";
+const BASE_PATH = "Mi-PWA/"; 
 const urlsToCache = [ 
-    "index.html",
-    "styles.css",
-    "app.js",
-    "offline.html"
+
+    `${BASE_PATH}index.html`,
+    `${BASE_PATH}offline.html`,
+    `${BASE_PATH}styles.css`,
+    `${BASE_PATH}icons/192x192.png`,
+    `${BASE_PATH}icons/512x512.png`,
+
 ]
 
 /*  2.IINSTALL => evento que se ejecuta al installa el service worker
