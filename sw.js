@@ -46,7 +46,7 @@ self.addEventListener("activate", event => {
     event.respondWith(
         caches.match(event.request).then( response => {
             return response || fetch(event.request).catch(
-                () => caches.match("offline.html"))
+                () => caches.match(`${BASE_PATH}offline.htlm`));
         })
     );
  });
@@ -61,7 +61,7 @@ self.addEventListener("activate", event => {
     );
  });
 
- // Opcional:
+// Opcional:
 //          Sync -> Sincronización en segundo plano (Opcional)
 //          Maneja eventos de API's que el navegador soporte
 
