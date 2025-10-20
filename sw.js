@@ -5,7 +5,7 @@ import { cache } from "react";
 //1. Nombre del cache y archivos a cachear
 
 const CACHE_NAME = "mi-pwa-cache-v1"
-const BASE_PATH = "/MI-PWA/"
+const BASE_PATH = "/"
 const urlsToCache = [
     `${BASE_PATH}index.html`,
     `${BASE_PATH}manifest.json`,
